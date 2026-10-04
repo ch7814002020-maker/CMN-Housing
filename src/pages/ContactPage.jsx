@@ -1,0 +1,5 @@
+import React from 'react';
+import { Phone, Mail, MapPinned } from 'lucide-react';
+import PageHero from '../components/common/PageHero';
+
+export default function ContactPage(){return <main><PageHero title="Contact Us"/><section className="section"><div className="container contact-grid"><div className="contact-info"><span className="orange-kicker">Contact</span><h2>Get in touch</h2><div className="contact-row"><Phone/><div><b>Phone</b><span>+91 81850 24365</span></div></div><div className="contact-row"><Mail/><div><b>Email</b><span>cmnhousing@gmail.com</span></div></div><div className="contact-row"><MapPinned/><div><b>Address</b><span>D No Sy No 1386, Ramalayam, Karimnagar, Karimnagar - 505001. Telangana</span></div></div></div><form className="message-card"><h3>Send Message</h3><div className="two-fields"><input placeholder="Name"/><input placeholder="Phone Number"/></div><input placeholder="Email Id"/><input placeholder="Subject"/><textarea rows="6" placeholder="Message"></textarea><button type="button" className="primary-btn">Submit</button></form></div></section></main>}

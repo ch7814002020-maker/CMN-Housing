@@ -1,0 +1,4 @@
+import React from 'react';
+import { X } from 'lucide-react';
+
+export default function BiddingModal({onClose}){return <div className="modal-backdrop" onMouseDown={onClose}><div className="bidding-modal" onMouseDown={e=>e.stopPropagation()}><button className="modal-x" onClick={onClose}><X/></button><h3>Introducing a Revolutionary Bidding Process in Real Estate</h3><p>Dear Real Estate Partners,</p><p>CMN Housing introduces a bidding and negotiation process designed to create a better outcome for buyers, sellers, homeowners, renters and investors.</p><p>Sellers can invite interested users to negotiate on a listing, while buyers and renters can participate in a transparent price discussion around the property.</p><p>Use this frontend modal as the visual entry point; connect it to your production bidding workflow when the backend is available.</p><strong>The cmnhousing.com Team</strong></div></div>}
